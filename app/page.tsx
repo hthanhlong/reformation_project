@@ -1,11 +1,14 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { SignOutButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="">
       <div>
-        <Button>Click me</Button>
+        <SignOutButton>
+          <Button>Sign Out</Button>
+        </SignOutButton>
       </div>
     </main>
   );
