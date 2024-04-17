@@ -1,0 +1,10 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+.eslintrc
+.prettierignore
+.prettierrc
+public
+build
+dist
