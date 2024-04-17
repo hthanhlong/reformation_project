@@ -86,3 +86,8 @@
     @apply mx-auto w-full max-w-5xl p-16 px-5 text-gray-400 md:px-10;
   }
 }
+
+/* transform page css */
+.media-uploader-field {
+  @apply grid h-fit min-h-[200px] grid-cols-1 gap-5 py-4 md:grid-cols-2;
+}

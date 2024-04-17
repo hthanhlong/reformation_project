@@ -1,7 +1,10 @@
-import React from 'react'
+import { auth } from '@clerk/nextjs'
+import TransformForm from '@/components/shared/TransformForm/TransformForm'
+import TransformedImage from '@/components/shared/TransformedImage'
 
 const FillPage = () => {
-  return <div>FillPage</div>
+  const config = { fillBackground: true }
+  return <TransformForm config={config} />
 }
 
 export default FillPage

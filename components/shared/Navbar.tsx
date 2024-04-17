@@ -1,15 +1,13 @@
 'use client'
-
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { navLinks } from '@/constants'
 import Image from 'next/image'
 import { UserButton } from '@clerk/nextjs'
+import { navLinks } from '../../constants'
 
 const Navbar = () => {
   const pathname = usePathname()
-  console.log('pathname', pathname)
 
   return (
     <nav className="flex h-[80px] w-full items-center justify-between bg-black px-16 text-white">

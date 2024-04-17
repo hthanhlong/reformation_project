@@ -123,7 +123,7 @@ declare type TransformationFormProps = {
   userId: string
   type: TransformationTypeKey
   creditBalance: number
-  data?: IImage | null
+  data?: any
   config?: Transformations | null
 }
 
@@ -132,9 +132,9 @@ declare type TransformedImageProps = {
   type: string
   title: string
   transformationConfig: Transformations | null
-  isTransforming: boolean
+  startTransform: boolean
   hasDownload?: boolean
-  setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>
+  setStartTransform?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 declare type transformationTypes = {
@@ -143,4 +143,13 @@ declare type transformationTypes = {
   subTitle: string
   config: any
   icon: string
+}
+
+export declare type AspectRatioKey = '1:1' | '3:4' | '9:16'
+
+declare type CheckoutTransactionParams = {
+  plan: string
+  credits: number
+  amount: number
+  buyerId: string
 }
