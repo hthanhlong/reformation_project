@@ -1,10 +1,10 @@
-import Title from '@/components/shared/Title'
+import Header from '@/components/shared/Header'
 import React from 'react'
 
 const Home = () => {
   return (
     <div>
-      <Title title="Home" />
+      <Header title="Home" />
     </div>
   )
 }
